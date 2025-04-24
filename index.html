@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Moumine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="logo">PORTFOLIO</span>
+        <button class="menu-button">☰</button>
+        <div class="nav-links">
+          <a href="#about">À propos</a>
+          <a href="#work">Projets</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
 
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <h1>MOUMINE MAHAMAT</h1>
+          <p class="subtitle" id="typing-text"></p>
+        </div>
+        <img src="images/image.png" alt="Photo de Moumine" />
+      </section>
+
+      <section class="about-me" id="about">
+        <h2>À propos de moi</h2>
+        <p>
+          Développeur web et mobile en formation, avec une expertise en sciences
+          de gestion et une expérience dans la logistique et le transport.
+          Passionné par la création de solutions digitales innovantes, je
+          travaille sur des projets de plateformes logistiques et propose des
+          formations en bureautique. Je maîtrise plusieurs technologies telles
+          que HTML, CSS, JavaScript, PHP, Java, et Firebase. Mon objectif est de
+          combiner mes compétences techniques avec mon parcours professionnel
+          pour offrir des solutions pratiques et accessibles..
+        </p>
+      </section>
+
+      <section class="my-work" id="work">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <div class="project-image-placeholder">
+              <p>
+                Un site web personnel présentant ton parcours, tes compétences
+                et tes projets passés. Ce site utilise HTML, CSS, et JavaScript
+                avec un design responsive et des animations. Technologies
+                utilisées : HTML, CSS, JavaScript.
+              </p>
+            </div>
+            <p class="project-title">Projet 1</p>
+          </div>
+          <div class="project">
+            <div class="project-image-placeholder">
+              <p>
+                Plateforme Logistique Digitale (en développement) Description :
+                Un projet en cours visant à créer une plateforme web optimisée
+                pour les transporteurs, afin de simplifier la gestion des
+                opérations logistiques. La plateforme permettra une gestion en
+                temps réel des ressources et des itinéraires. Technologies
+                utilisées : HTML, CSS, JavaScript, PHP, MySQL.
+                <a
+                  href="Lien vers le
+                projet"
+                ></a>
+              </p>
+            </div>
+            <p class="project-title">Projet 2</p>
+          </div>
+          <div class="project">
+            <div class="project-image-placeholder">
+              <p>
+                Application de Gestion de Médicaments (avec alertes) Description
+                : Une application pour la gestion des stocks de médicaments avec
+                fonctionnalités d'ajout/suppression, traduction en arabe et
+                français, et alertes automatiques lorsqu'un stock descend en
+                dessous de 10%. Technologies utilisées : HTML, CSS, JavaScript,
+                PHP, MySQL, Firebase.
+              </p>
+            </div>
+            <p class="project-title">Projet 3</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre nom"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="send-button">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Portfolio de Moumine Mahamat. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
