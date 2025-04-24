@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- Langue principale : français -->
   <head>
     <meta charset="UTF-8" />
+    <!-- Encodage des caractères en UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Affichage responsive sur mobile -->
     <title>Portfolio de Moumine</title>
+    <!-- Titre de la page dans l'onglet du navigateur -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Lien vers la feuille de style CSS externe -->
   </head>
   <body>
+    <!-- En-tête avec menu de navigation -->
     <header>
       <nav>
         <span class="logo">PORTFOLIO</span>
+        <!-- Logo ou nom du site -->
         <button class="menu-button">☰</button>
+        <!-- Bouton menu pour affichage mobile -->
         <div class="nav-links">
+          <!-- Liens de navigation internes vers les sections -->
           <a href="#about">À propos</a>
           <a href="#work">Projets</a>
           <a href="#contact">Contact</a>
@@ -19,15 +28,21 @@
       </nav>
     </header>
 
+    <!-- Contenu principal -->
     <main>
+      <!-- Section d'accueil avec nom et image -->
       <section class="hero" id="home">
         <div class="hero-text">
           <h1>MOUMINE MAHAMAT</h1>
+          <!-- Nom principal en titre -->
           <p class="subtitle" id="typing-text"></p>
+          <!-- Texte dynamique animé (effet de frappe) -->
         </div>
         <img src="images/image.png" alt="Photo de Moumine" />
+        <!-- Image de présentation -->
       </section>
 
+      <!-- Section À propos de moi -->
       <section class="about-me" id="about">
         <h2>À propos de moi</h2>
         <p>
@@ -42,9 +57,13 @@
         </p>
       </section>
 
+      <!-- Section Projets -->
       <section class="my-work" id="work">
         <h2>Mes Projets</h2>
         <div class="projects-grid">
+          <!-- Grille de présentation des projets -->
+
+          <!-- Projet 1 -->
           <div class="project">
             <div class="project-image-placeholder">
               <p>
@@ -56,6 +75,8 @@
             </div>
             <p class="project-title">Projet 1</p>
           </div>
+
+          <!-- Projet 2 -->
           <div class="project">
             <div class="project-image-placeholder">
               <p>
@@ -65,14 +86,12 @@
                 opérations logistiques. La plateforme permettra une gestion en
                 temps réel des ressources et des itinéraires. Technologies
                 utilisées : HTML, CSS, JavaScript, PHP, MySQL.
-                <a
-                  href="Lien vers le
-                projet"
-                ></a>
               </p>
             </div>
             <p class="project-title">Projet 2</p>
           </div>
+
+          <!-- Projet 3 -->
           <div class="project">
             <div class="project-image-placeholder">
               <p>
@@ -89,6 +108,7 @@
         </div>
       </section>
 
+      <!-- Section Contact avec formulaire -->
       <section class="contact" id="contact">
         <h2>Contact</h2>
         <form>
@@ -122,13 +142,17 @@
             ></textarea>
           </div>
           <button type="submit" class="send-button">Envoyer</button>
+          <!-- Bouton d’envoi du formulaire -->
         </form>
       </section>
     </main>
 
+    <!-- Pied de page -->
     <footer>
       <p>&copy; 2023 Portfolio de Moumine Mahamat. Tous droits réservés.</p>
     </footer>
+
+    <!-- Inclusion du script JavaScript externe -->
     <script src="script.js"></script>
   </body>
 </html>

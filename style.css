@@ -1,23 +1,25 @@
+/* Style général du corps de la page */
 body {
-  font-family: "Times New Roman", serif;
+  font-family: "Times New Roman", serif; /* Police classique */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+  background-color: #f4f4f4; /* Couleur de fond claire */
+  color: #333; /* Couleur de texte standard */
+  line-height: 1.6; /* Hauteur de ligne pour lisibilité */
 }
 
-/* Header */
+/* En-tête de page */
 header {
-  background-color: #001f3f;
+  background-color: #001f3f; /* Bleu foncé */
   color: white;
   padding: 1rem;
-  position: fixed;
+  position: fixed; /* Fixé en haut */
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 1000; /* Toujours au-dessus */
 }
 
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -28,7 +30,7 @@ nav {
 }
 
 .logo {
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-size: clamp(1.2rem, 3vw, 1.5rem); /* Taille responsive */
   font-weight: bold;
 }
 
@@ -38,12 +40,12 @@ nav {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  display: none;
+  display: none; /* Caché par défaut */
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5rem; /* Espacement entre les liens */
 }
 
 .nav-links a {
@@ -52,7 +54,7 @@ nav {
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
-/* Hero Section */
+/* Section de présentation (hero) */
 .hero {
   background-color: white;
   padding: 6rem 2rem 2rem;
@@ -82,7 +84,7 @@ nav {
   height: 1.5em;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #010a13;
+  border-right: 2px solid #010a13; /* Curseur de dactylographie */
 }
 
 .hero img {
@@ -92,7 +94,7 @@ nav {
   object-fit: cover;
 }
 
-/* Sections */
+/* Sections générales */
 section {
   background-color: white;
   padding: 2rem;
@@ -110,7 +112,7 @@ section h2 {
   font-size: clamp(1.3rem, 3vw, 1.8rem);
 }
 
-/* Projects Grid */
+/* Grille de projets */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -123,7 +125,7 @@ section h2 {
 }
 
 .project:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Effet de survol */
 }
 
 .project-image-placeholder {
@@ -138,7 +140,7 @@ section h2 {
   font-size: 1.1rem;
 }
 
-/* Contact Form */
+/* Formulaire de contact */
 .contact form {
   display: flex;
   flex-direction: column;
@@ -164,7 +166,7 @@ section h2 {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #001f3f;
+  border-color: #001f3f; /* Couleur de focus */
   outline: none;
 }
 
@@ -188,7 +190,7 @@ section h2 {
   background-color: #003366;
 }
 
-/* Footer */
+/* Pied de page */
 footer {
   background-color: #001f3f;
   color: white;
@@ -197,7 +199,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* Typing Animation */
+/* Animation de dactylographie */
 @keyframes typing {
   from {
     width: 0;
@@ -217,10 +219,10 @@ footer {
   }
 }
 
-/* Responsive Adjustments */
+/* Réactivité */
 @media (max-width: 768px) {
   .menu-button {
-    display: block;
+    display: block; /* Affiche le bouton menu */
   }
 
   .nav-links {
